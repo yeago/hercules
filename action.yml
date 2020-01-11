@@ -7,9 +7,7 @@ inputs:
     required: false
     default: "--burndown --burndown-people --devs --skip-blacklist=true --people-dict=/tmp/id --blacklisted-prefixes=tapped/old_image_hashes.p,tapped/base/static/package-lock.json,tapped/draft/migrations,tapped/base/migrations,tapped/interest/migrations,tapped/image2list/migrations,tapped/alterart/migrations,tapped/groups/migrations,tapped/comments_app/migrations,tapped/tourny/migrations,tapped/mtg/migrations,tapped/deck/migrations,tapped/urler/migrations,tapped/changelog/migrations,tapped/tcg/migrations,tapped/delayed_delete/migration,tapped/ck/migrations,tapped/trade/migrations,tapped/communitycards/migration,tapped/inventory/migrations,tapped/meets/migrations,tapped/chat/migrations,tapped/cart/migrations,tapped/cube/migrations,tapped/collection/migrations,tapped/draft/fixtures,tapped/base/fixtures,tapped/mtg/fixtures,tapped/deck/fixtures,tapped/meets/fixtures,tapped/cube/fixtures,tapped/collection/fixtures/"
 runs:
-  using:
-    - "docker"
-    - "ubuntu/latest"
+  using: "docker"
   image: "docker://srcd/hercules:latest"
   args:
     - "/bin/bash"
